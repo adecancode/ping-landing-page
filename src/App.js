@@ -1,5 +1,8 @@
 import logo from './img/logo.svg'
 import mockup from './img/illustration-dashboard.png'
+import facebook from './img/logo-facebook.svg'
+import instagram from './img/logo-instagram.svg'
+import twitter from './img/logo-twitter.svg'
 
 function App() {
   return (
@@ -20,12 +23,15 @@ function App() {
       <div className="mockup">
         <img src={ mockup } />
       </div>
+
       <footer>
         <div className="icon-bar">
-          <a></a>
-          <a></a>
-          <a></a>
+          <a><img src={ facebook } /></a>
+          <a><img src={ instagram } /></a>
+          <a><img src={ twitter } /></a>
         </div>
+        <p className="cc center">© Copyright Ping. All rights reserved.</p>
+        <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://twitter.com/DevNinjaAde">Ade</a>.</p>
       </footer>
     </div>
   );

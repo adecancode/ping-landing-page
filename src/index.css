@@ -45,12 +45,13 @@ p,a,input,button,h1,h2,h3,h4,h5,h6 {
 .form{
   margin: auto;
   text-align: center;
-  max-width: 550px;
   margin-top: 50px;
 }
 form{
   display: flex;
   margin: 0 -10px;
+  max-width: 550px;
+  margin: auto;
 }
 .input{
   padding: 20px 30px;
@@ -74,6 +75,7 @@ form{
 }
 .nm-button:hover{
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 hsl(223, 100%, 88%);
 }
 ::placeholder{
   font-family: 'Libre Franklin', sans-serif;
@@ -86,4 +88,98 @@ form{
   display: block;
   max-width: 500px;
   margin: auto;
+}
+footer{
+  padding: 40px 0;
+  position: relative;
+}
+.icon-bar{
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-bar > a{
+  margin: 0 10px;
+  background: #fff;
+  border-radius: 9999px;
+}
+.icon-bar > a > img {
+  width: 20px;
+  fill: blue;
+}
+.cc{
+  font-size: 10px;
+}
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 300px) and (max-width: 320px) {
+  .first{
+    font-size: 25px;
+    margin: 0 20px;
+  }
+  .second{
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+    margin-top: 12px;
+  }
+  .form{
+    max-width: 270px;
+  }
+  form{
+    display: block;
+    max-width: 270px;
+  }
+  .input{
+    margin: 0;
+    width: auto;
+  }
+  .nm-button{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .mockup > img {
+    max-width: 270px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 500px) {
+  .first{
+    font-size: 25px;
+    margin: 0 20px;
+  }
+  .second{
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+    margin-top: 12px;
+  }
+  .form{
+    max-width: 270px;
+  }
+  form{
+    display: block;
+    max-width: 300px;
+  }
+  .input{
+    margin: 0;
+    width: auto;
+  }
+  .nm-button{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .mockup > img {
+    max-width: 300px;
+  }
 }
